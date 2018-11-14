@@ -5,12 +5,7 @@ body {
     background: #47536d;
 }
 
-.headerTop {
-    background: blue;
-    background: url(img/top.png) repeat;
-    background-size: 100% 80px;
 
-}
 
 .logo {
     width: 80px;
@@ -97,4 +92,8 @@ ul li:hover {
     color: #fff;
     position: relative;
     bottom: 0;
+}
+.top{
+    border-top: 10px solid #de740b;
+    margin-bottom: 50px;
 }
