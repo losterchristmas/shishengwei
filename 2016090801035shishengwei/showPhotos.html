@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/showPhotos.css">
+    <title>社团图册</title>
+</head>
+<style>
+</style>
+
+<body>
+    <div class="headerTop">
+        <div style="width: 1000px;margin: 0 auto;display: flex;">
+            <div class="logo">
+                <img style="border-radius: 50px;" src="img/logo.jpg" height="80px" width="80px" alt="logo">
+            </div>
+            <div class="title">
+                <p style="font-size: 22px;">电子科技大学中弈棋社</p>
+                <p style="font-size: 12px;height: 14px;line-height: 14px;">University of Electronic Science and Technology Chinese Chess Club</p>
+            </div>
+        </div>
+        <div style="width: 1000px;margin: 0 auto;">
+            <ul style="padding: 0;">
+                <li>
+                    <a href="./index.html">首页</a>
+                </li>
+                <li>
+                    <a href="./CommunityCulture.html">社团文化</a>
+                </li>
+                <li>
+                    <a href="./active.html">社团活动</a>
+                </li>
+                <li>
+                    <a href="">社团图册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="pc-banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-center none-effect">
+                    <a href="#">
+                        <img src="img/live/banner001.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner002.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner003.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner004.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner005.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner006.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner007.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner008.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner009.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner0010.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner0011.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner0012.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <div style="margin-top: 651px;"></div>
+    <div class="footer">
+        <div>
+            <p style="text-align: center;padding-top:80px;padding-bottom: 10px; ">电子科技大学中山学院中弈棋社©2018&nbsp;</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+
+    window.onload = function () {
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: false,
+            speed: 1000,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 2,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            onInit: function (swiper) {
+                swiper.slides[2].className = "swiper-slide swiper-slide-active";
+            },
+            breakpoints: {
+                668: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    }
+
+
+</script>
+
+</html>
