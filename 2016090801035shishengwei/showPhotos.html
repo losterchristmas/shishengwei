@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize1.css">
+    <link rel="stylesheet" href="css/showPhotos.css">
+    <link rel="stylesheet" href="css/lunbo_demo.css">
+    <link rel="stylesheet" href="css/lunbo_style.css">
+    <link rel="stylesheet" href="css/showPhotos.css">
+    <title>社团图册</title>
+</head>
+<style>
+    .headerTop {
+        background: blue;
+        background: url(img/top.png) repeat;
+        background-size: 100% 80px;
+
+    }
+</style>
+
+<body>
+    <div class="headerTop">
+        <div style="width: 1000px;margin: 0 auto;display: flex;">
+            <div class="logo">
+                <img style="border-radius: 50px;" src="img/logo.jpg" height="80px" width="80px" alt="logo">
+            </div>
+            <div class="title">
+                <p style="font-size: 22px;">电子科技大学中弈棋社</p>
+                <p style="font-size: 12px;height: 14px;line-height: 14px;">University of Electronic Science and Technology Chinese Chess Club</p>
+            </div>
+        </div>
+        <div style="width: 1000px;margin: 0 auto;">
+            <ul style="padding: 0;">
+                <li>
+                    <a href="./index.html">首页</a>
+                </li>
+                <li>
+                    <a href="./CommunityCulture.html">社团文化</a>
+                </li>
+                <li>
+                    <a href="./active.html">社团活动</a>
+                </li>
+                <li>
+                    <a href="">社团图册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <section class="pc-banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-center none-effect">
+                    <a href="#">
+                        <img src="img/live/banner001.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner002.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner003.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner004.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner005.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner006.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner007.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner008.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner009.jpg">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner0010.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner0011.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/live/banner0012.png">
+                    </a>
+                    <div class="layer-mask"></div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section> -->
+    <div class="carousel top" data-gap="80">
+        <figure>
+            <img src="img/live/banner001.jpg" alt="">
+            <img src="img/live/banner002.jpg" alt="">
+            <img src="img/live/banner003.png" alt="">
+            <img src="img/live/banner004.png" alt="">
+            <img src="img/live/banner005.jpg" alt="">
+            <img src="img/live/banner006.jpg" alt="">
+            <img src="img/live/banner007.jpg" alt="">
+            <img src="img/live/banner008.jpg" alt="">
+        </figure>
+        <nav>
+            <button class="nav prev">上一张</button>
+            <button class="nav next">下一张</button>
+        </nav>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p style="text-align: center;padding-top:80px;padding-bottom: 10px; ">电子科技大学中山学院中弈棋社©2018&nbsp;</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+    'use strict';
+
+    window.addEventListener('load', function () {
+        var carousels = document.querySelectorAll('.carousel');
+
+        for (var i = 0; i < carousels.length; i++) {
+            carousel(carousels[i]);
+        }
+    });
+
+    function carousel(root) {
+        var figure = root.querySelector('figure'),
+            nav = root.querySelector('nav'),
+            images = figure.children,
+            n = images.length,
+            gap = root.dataset.gap || 0,
+            bfc = 'bfc' in root.dataset,
+            theta = 2 * Math.PI / n,
+            currImage = 0;
+
+        setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+        window.addEventListener('resize', function () {
+            setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+        });
+
+        setupNavigation();
+
+        function setupCarousel(n, s) {
+            var apothem = s / (2 * Math.tan(Math.PI / n));
+
+            figure.style.transformOrigin = '50% 50% ' + -apothem + 'px';
+
+            for (var i = 0; i < n; i++) {
+                images[i].style.padding = gap + 'px';
+            } for (i = 1; i < n; i++) {
+                images[i].style.transformOrigin = '50% 50% ' + -apothem + 'px';
+                images[i].style.transform = 'rotateY(' + i * theta + 'rad)';
+            }
+            if (bfc) for (i = 0; i < n; i++) {
+                images[i].style.backfaceVisibility = 'hidden';
+            } rotateCarousel(currImage);
+        }
+
+        function setupNavigation() {
+            nav.addEventListener('click', onClick, true);
+
+            function onClick(e) {
+                e.stopPropagation();
+
+                var t = e.target;
+                if (t.tagName.toUpperCase() != 'BUTTON') return;
+
+                if (t.classList.contains('next')) {
+                    currImage++;
+                } else {
+                    currImage--;
+                }
+
+                rotateCarousel(currImage);
+            }
+        }
+
+        function rotateCarousel(imageIndex) {
+            figure.style.transform = 'rotateY(' + imageIndex * -theta + 'rad)';
+        }
+    }
+</script>
+
+</html>
