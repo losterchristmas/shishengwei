@@ -141,9 +141,11 @@ ul li:last-child {
 ul li:first-child {
     border-top-left-radius: 5px;
 }
-
+ul li a{
+font-weight:600;
+}
 a {
-    font-weight: 600;
+ 
     padding: 2px 3px;
     text-decoration: none;
     color: #fff;
