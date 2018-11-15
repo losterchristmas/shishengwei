@@ -11,40 +11,122 @@
     <title>社团文化</title>
 </head>
 <style>
-    .headerTop {
-        background: blue;
-        background: url(img/top.png) repeat;
-        background-size: 100% 80px;
-        border-bottom: 10px solid #de740b;
+    .header_top {
+        /* float: left; */
+        /* background: red; */
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .top1 {
+        background: #d48745;
+        height: 136px;
+        width: 45%;
+        display: inline-block;
+        /* position: relative;
+        top: 0;
+        left: 0; */
+        z-index: 100;
+    }
+
+    .list_line {
+        /* position: absolute;
+        top: 0;
+        right: 0; */
+        width: 100%;
+        background: #fff;
+        margin-top: -87px;
+        height: 68px;
+        z-index: 10;
+    }
+
+    .list {
+        margin: 0 10px;
+        font-size: 16px;
+        line-height: 41px;
+        margin-top: 27px;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        color: #000;
+    }
+
+    .list:hover {
+        color: #fff !important;
+        background: url(img/list1.png) no-repeat;
+        background-size: 100px 51px;
+    }
+
+    .list_flag {
+        color: #fff !important;
+        background: url(img/list1.png) no-repeat;
+        background-size: 100px 51px;
+    }
+
+    .list_list {}
+
+    .list_p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 41px;
+        display: inline-block;
+        width: 130px;
+        text-align: center;
+        background: #d48745;
+        /* background: url(img/list1.png) no-repeat; */
+        /* background-size: 130px 51px; */
+    }
+
+    .list_p:hover {
+        color: aqua;
     }
 </style>
 
 <body>
-    <div class="headerTop">
-        <div style="width: 1000px;margin: 0 auto;display: flex;">
-            <div class="logo">
-                <img style="border-radius: 50px;" src="img/logo.jpg" height="80px" width="80px" alt="logo">
+
+    <div>
+        <div style="height:136px; width:30%;position: absolute;;top:0;left:0;background: #d48745;"></div>
+        <div style="position: absolute;top: 0;width: 1000px;margin-left: -500px;left: 50%;">
+
+            <div class="header_top">
+                <div class="top1">
+                    <div style="display:flex;padding-top:33px;width: 350px;margin-left: 20%;">
+                        <img src="img/logo.jpg" width="80" height="80" style="border-radius:50px;" alt="">
+                        <div style="margin-left:27px;margin-top: 10px;">
+                            <p style="font-size:22px;color: #fff;margin: 0;height: 40px;line-height: 40px;width: 100%;">电子科技大学中弈棋社</p>
+                            <p style="font-size: 12px;height: 14px;line-height: 14px;color:#fff;width: 100%;margin: 0;">University
+                                of Electronic Science and Technology Chinese Chess Club</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="width:37px;height:136px;display:inline-block;position: absolute;z-index: 100;"><img src="img/top1.png"
+                        height="136" width="37" alt=""></div>
+
+                <div class="list_line">
+                    <div style="display:flex;margin-left:50%;width: 520px; ">
+                        <a href="./index.html"> <p class="list">首页</p> </a>
+                        <a href="./CommunityCulture.html"> <p class="list flag">社团文化</p> </a>
+                        <a href="./active.html"> <p class="list">社团交流</p> </a>
+                        <a href="./showPhotos.html"> <p class="list">社团图册</p> </a>
+                    </div>
+                </div>
+
             </div>
-            <div class="title">
-                <p style="font-size: 22px;">电子科技大学中弈棋社</p>
-                <p style="font-size: 12px;height: 14px;line-height: 14px;">University of Electronic Science and Technology Chinese Chess Club</p>
+            <div class="list_list" style="display:none;">
+                <div style="display:flex;">
+                    <img style="margin-left:46%;height: 45px;" src="img/list_left.png" height="45" width="17" alt="">
+                    <div style="display:flex;width: 520px;background:#d48745;">
+                        <a href=""><p class="list_p">社团领队</p></a>
+                        <a href=""><p class="list_p">社团会干</p></a>
+                        <a href=""><p class="list_p">社团成员</p></a>
+                    </div>
+                    <img style="height: 45px;" src="img/list_right.png" height="45" width="17" alt=""></div>
+
             </div>
         </div>
-        <div style="width: 1000px;margin: 0 auto;">
-            <ul style="padding: 0;">
-                <li>
-                    <a href="./index.html">首页</a>
-                </li>
-                <li>
-                    <a href="">社团文化</a>
-                </li>
-                <li>
-                    <a href="./active.html">社团活动</a>
-                </li>
-                <li>
-                    <a href="./showPhotos.html">社团图册</a>
-                </li>
-            </ul>
+        <div style="width:1000px;height:400px;margin: 0 auto;">
+            <img src="img/headerTop.jpg" width="1000px" height="400px;" alt="">
         </div>
     </div>
 
@@ -70,7 +152,8 @@
                 color: #fff;text-align: center;">象棋</p>
                 </div>
                 <div>
-                    <p style="padding: 5px 0px;margin: 10px 0px;margin-right: 100px;font-size: 18px;line-height: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;象棋，亦作"象碁"、中国象棋(英文名Chinese chess)，中国传统棋类益智游戏，在中国有着悠久的历史，先秦时期已有记载。属于二人对抗性游戏的一种，由于用具简单，趣味性强，成为流行极为广泛的棋艺活动。主要流行于华人及汉字文化圈的国家，象棋是中国正式开展的78个体育运动项目之一。是首届世界智力运动会的正式比赛项目之一。</p>
+                    <p style="padding: 5px 0px;margin: 10px 0px;margin-right: 100px;font-size: 18px;line-height: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;象棋，亦作"象碁"、中国象棋(英文名Chinese
+                        chess)，中国传统棋类益智游戏，在中国有着悠久的历史，先秦时期已有记载。属于二人对抗性游戏的一种，由于用具简单，趣味性强，成为流行极为广泛的棋艺活动。主要流行于华人及汉字文化圈的国家，象棋是中国正式开展的78个体育运动项目之一。是首届世界智力运动会的正式比赛项目之一。</p>
                 </div>
             </div>
             <div style="display: flex;padding-top: 20px;border-bottom: 1px solid #686868;padding-bottom:20px;">
@@ -167,5 +250,21 @@
         </div>
     </div>
 </body>
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+    $(function () {
+        $(".flag,.list_list").on({
+            mouseover: function () {
+                $(".list_list").show();
+                $(".flag").addClass('list_flag');
+
+            },
+            mouseout: function () {
+                $(".list_list").hide();
+                $(".flag").removeClass("list_flag");
+
+            }
+        });
+    });</script>
 
 </html>

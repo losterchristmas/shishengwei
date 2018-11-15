@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background: #47536d;
 }
 
 
@@ -58,7 +57,6 @@ ul li:first-child {
 }
 
 a {
-    font-weight: 600;
     padding: 2px 3px;
     text-decoration: none;
     color: #fff;
@@ -80,13 +78,10 @@ ul li:hover {
 }
 
 .pc-banner {
-    border-top: 10px solid #de740b;
-    border-bottom: 10px solid #de740b;
     background: #47536d;
 }
 
 .footer {
-    border-top: 10px solid #de740b;
     width: 100%;
     background: #474e5d;
     color: #fff;
@@ -94,6 +89,5 @@ ul li:hover {
     bottom: 0;
 }
 .top{
-    border-top: 10px solid #de740b;
     margin-bottom: 50px;
 }

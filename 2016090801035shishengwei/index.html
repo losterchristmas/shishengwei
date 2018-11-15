@@ -11,40 +11,121 @@
     <title>中弈棋社</title>
 </head>
 <style>
-    .headerTop {
-        background: blue;
-        background: url(img/top.png) repeat;
-        background-size: 100% 80px;
-        border-bottom: 10px solid #de740b;
+    .header_top {
+        /* float: left; */
+        /* background: red; */
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .top1 {
+        background: #d48745;
+        height: 136px;
+        width: 45%;
+        display: inline-block;
+        /* position: relative;
+        top: 0;
+        left: 0; */
+        z-index: 100;
+    }
+
+    .list_line {
+        /* position: absolute;
+        top: 0;
+        right: 0; */
+        width: 100%;
+        background: #fff;
+        margin-top: -87px;
+        height: 68px;
+        z-index: 10;
+    }
+
+    .list {
+        margin: 0 10px;
+        font-size: 16px;
+        line-height: 41px;
+        margin-top: 27px;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        color: #000;
+    }
+
+    .list:hover {
+        color: #fff !important;
+        background: url(img/list1.png) no-repeat;
+        background-size: 100px 51px;
+    }
+
+    .list_flag {
+        color: #fff !important;
+        background: url(img/list1.png) no-repeat;
+        background-size: 100px 51px;
+    }
+
+    .list_list {}
+
+    .list_p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 41px;
+        display: inline-block;
+        width: 130px;
+        text-align: center;
+        background: #d48745;
+        /* background: url(img/list1.png) no-repeat; */
+        /* background-size: 130px 51px; */
+    }
+
+    .list_p:hover {
+        color: aqua;
     }
 </style>
 
 <body>
-    <div class="headerTop">
-        <div style="width: 70%;margin: 0 auto;display: flex;">
-            <div class="logo">
-                <img style="border-radius: 50px;" src="img/logo.jpg" height="80px" width="80px" alt="logo">
+    <div>
+        <div style="height:136px; width:30%;position: absolute;;top:0;left:0;background: #d48745;"></div>
+        <div style="position: absolute;top: 0;width: 1000px;margin-left: -500px;left: 50%;">
+
+            <div class="header_top">
+                <div class="top1">
+                    <div style="display:flex;padding-top:33px;width: 350px;margin-left: 20%;">
+                        <img src="img/logo.jpg" width="80" height="80" style="border-radius:50px;" alt="">
+                        <div style="margin-left:27px;margin-top: 10px;">
+                            <p style="font-size:22px;color: #fff;margin: 0;height: 40px;line-height: 40px;width: 100%;">电子科技大学中弈棋社</p>
+                            <p style="font-size: 12px;height: 14px;line-height: 14px;color:#fff;width: 100%;margin: 0;">University
+                                of Electronic Science and Technology Chinese Chess Club</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="width:37px;height:136px;display:inline-block;position: absolute;z-index: 100;"><img src="img/top1.png"
+                        height="136" width="37" alt=""></div>
+
+                <div class="list_line">
+                    <div style="display:flex;margin-left:50%;width: 520px; ">
+                        <a href="./index.html"> <p class="list">首页</p> </a>
+                        <a href="./CommunityCulture.html"> <p class="list flag">社团文化</p> </a>
+                        <a href="./active.html"> <p class="list">社团交流</p> </a>
+                        <a href="./showPhotos.html"> <p class="list">社团图册</p> </a>
+                    </div>
+                </div>
+
             </div>
-            <div class="title">
-                <p style="font-size: 22px;">电子科技大学中弈棋社</p>
-                <p style="font-size: 12px;height: 14px;line-height: 14px;">University of Electronic Science and Technology Chinese Chess Club</p>
+            <div class="list_list" style="display:none;">
+                <div style="display:flex;">
+                    <img style="margin-left:46%;height: 45px;" src="img/list_left.png" height="45" width="17" alt="">
+                    <div style="display:flex;width: 520px;background:#d48745;">
+                        <a href=""><p class="list_p">社团领队</p></a>
+                        <a href=""><p class="list_p">社团会干</p></a>
+                        <a href=""><p class="list_p">社团成员</p></a>
+                    </div>
+                    <img style="height: 45px;" src="img/list_right.png" height="45" width="17" alt=""></div>
+
             </div>
         </div>
-        <div style="width: 1000px;margin: 0 auto;">
-            <ul style="padding: 0;">
-                <li>
-                    <a href="">首页</a>
-                </li>
-                <li>
-                    <a href="./CommunityCulture.html">社团文化</a>
-                </li>
-                <li>
-                    <a href="./active.html">社团活动</a>
-                </li>
-                <li>
-                    <a href="./showPhotos.html">社团图册</a>
-                </li>
-            </ul>
+        <div style="width:1000px;height:400px;margin: 0 auto;">
+            <img src="img/headerTop.jpg" width="1000px" height="400px;" alt="">
         </div>
     </div>
 
@@ -103,7 +184,8 @@
                             <a href="" style="color: red;font-weight: 600;">2019年全国五子棋竞赛计划有关事宜的通知 </a>
                         </p>
                         <p>
-                            <a href="http://www.eweiqi.com/index.php?m=content&c=index&a=show&catid=59&id=11">狙击大乱斗 每胜一盘奖励200 仅限粉色9段ID </a>
+                            <a href="http://www.eweiqi.com/index.php?m=content&c=index&a=show&catid=59&id=11">狙击大乱斗 每胜一盘奖励200
+                                仅限粉色9段ID </a>
                         </p>
                         <p>
                             <a href="http://www.dpxq.com/hldcg/tour_6557.html">2018年博瑞杯全国象棋个人赛 男子甲组</a>
@@ -137,7 +219,8 @@
                     <img src="img/weiqi.gif_s400x0" height="100px" width="140px" alt="">
                     <div>
                         <p>
-                            <a href="http://www.eweiqi.com/index.php?m=content&c=index&a=show&catid=228&id=30339" style="color: red;font-weight: 600;">王昊洋获胜助中国队扳平比分 </a>
+                            <a href="http://www.eweiqi.com/index.php?m=content&c=index&a=show&catid=228&id=30339" style="color: red;font-weight: 600;">王昊洋获胜助中国队扳平比分
+                                </a>
                         </p>
                         <p>
                             <a href="http://www.eweiqi.com/index.php?m=content&c=index&a=show&catid=150&id=30338">棋圣战决胜局连笑胜周睿羊</a>
@@ -161,7 +244,8 @@
 
                     <div>
                         <p>
-                            <a href="http://www.dpxq.com/hldcg/search/view_m_97161.html" style="color: red;font-weight: 600;">北京 王天一 胜 黑龙江 聂铁文 </a>
+                            <a href="http://www.dpxq.com/hldcg/search/view_m_97161.html" style="color: red;font-weight: 600;">北京
+                                王天一 胜 黑龙江 聂铁文 </a>
                         </p>
                         <p>
                             <a href="http://www.dpxq.com/hldcg/search/view_m_44827.html">河北 李来群 和 广东 杨官璘 </a>

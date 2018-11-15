@@ -49,3 +49,20 @@ $(document).ready(function () {
     })
 
 })
+
+
+
+$(function () {
+    $(".flag,.list_list").on({
+        mouseover: function () {
+            $(".list_list").show();
+            $(".flag").addClass('list_flag');
+
+        },
+        mouseout: function () {
+            $(".list_list").hide();
+            $(".flag").removeClass("list_flag");
+
+        }
+    });
+});
