@@ -237,6 +237,7 @@
         </div>
     </div>
 </body>
+<script src="js/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript">
     'use strict';
@@ -305,6 +306,20 @@
             figure.style.transform = 'rotateY(' + imageIndex * -theta + 'rad)';
         }
     }
-</script>
+
+    $(function () {
+        $(".flag,.list_list").on({
+            mouseover: function () {
+                $(".list_list").show();
+                $(".flag").addClass('list_flag');
+
+            },
+            mouseout: function () {
+                $(".list_list").hide();
+                $(".flag").removeClass("list_flag");
+
+            }
+        });
+    });</script>
 
 </html>
